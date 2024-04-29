@@ -1,0 +1,3 @@
+order-service/mysql/
+order-service/docker/
+product-service/data/

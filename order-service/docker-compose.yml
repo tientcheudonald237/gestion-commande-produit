@@ -1,0 +1,12 @@
+version: '4'
+services:
+  mysql:
+    image: mysql:8.3.0
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql
+    ports:
+      - "3306:3306"
+    volumes:
+      - /home/tientcheudonald237/Documents/projet/spring/first/order-service/mysql:/var/lib/mysql
+      - /home/tientcheudonald237/Documents/projet/spring/first/order-service/docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
